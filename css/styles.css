@@ -1,10 +1,16 @@
 /* styles.css */
 
-div {
-    color: white;
-    background-color: black;
+h1 {
+    color: darkolivegreen;
+    background-color: lightgreen;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
   }
+
+.links {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
   
-  p {
-    color: red;
-  }
+  
