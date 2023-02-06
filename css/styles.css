@@ -1,15 +1,26 @@
 /* styles.css */
 
-h1 {
+h1, h2 {
     color: darkolivegreen;
     background-color: lightgreen;
     text-align: center;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Helvetica, sans-serif;
   }
 
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+p, ul, ol {
+  font-family: Verdana, Helvetica, sans-serif;
+}
+
 .links {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Helvetica, sans-serif;
   font-size: 24px;
 }
   
