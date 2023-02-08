@@ -5,6 +5,7 @@ h1, h2 {
     background-color: lightgreen;
     text-align: center;
     font-family: Verdana, Helvetica, sans-serif;
+    border: 2px solid green;
   }
 
 h1 {
