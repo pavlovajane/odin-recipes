@@ -9,6 +9,8 @@ function capitalize(str) {
 
 function lastletter(str) {
     // returns the very last letter of the string
+    length = str.length
+    return(str.slice(length-1))
 }
 
-console.log(capitalize("hohohoh"))
+console.log(lastletter("hohohoh"))
