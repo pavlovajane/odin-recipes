@@ -23,6 +23,11 @@ function getComputerChoice() {
 }
 
 function playRound(playerSelection, computerSelection) {
+    
+    playerSelection = playerSelection.toLowerCase();
+    
+    console.log("Playerchoice: " + playerSelection)
+    console.log("Computer choice: "+ computerSelection)
     // scissors beats paper
     // paper beats rock
     // rock beats scissors
@@ -34,11 +39,16 @@ function playRound(playerSelection, computerSelection) {
 
     if (playerSelection == computerSelection) {
         console.log("It's a tie!");
+        return;
     }
-
+    
     for (let i = 0; i < 3; i++) {
-           
+           if (playerSelection == winners[i][0] && computerSelection == winners[i][1]) {
+            console.log("Player wins");
+            return;
+           }
         }
+    console.log("Computer wins");
 }
 
 function game() {
@@ -47,9 +57,10 @@ function game() {
         let playerSelection = prompt("Your choice (rock/paper/scissors): ");
         let computerSelection = getComputerChoice();
 
-        console.log(playRound(playerSelection, computerSelection));
+        playRound(playerSelection, computerSelection);
     }
 
 }
 
+game();
 
